@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/unsemantic/1.2.3/unsemantic-grid-responsive.min.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/terminal.css@0.7.2/dist/terminal.min.css" />
+
+    <link rel="stylesheet" href="/variables.css" />
+
+    <script src="/header.js"></script>
+
+    <title>mary's little big website</title>
+  </head>
+  <body class=terminal>
+    <div class=container>
+      <mary-header>
+
+      <div class=grid-container>
+        <div class="grid-100">
+          <h3>Career</h3>
+          <div class=terminal-timeline>
+            <div class=terminal-card>
+              <header>Senior Performance Engineer @ Netflix, Node.js Platform Team</header>
+              <div>
+                <p>Apr 2020 - Present</p>
+                  <ul>
+                    <li>Participated on the on call rotation for the Node.js Platform running at the edge, which handles the majority of API traffic coming from netflix.com and other devices</li>
+                    <li>Identified and fixed several performance issues on the aforementioned platform, including but not limited to memory leaks (on application code, platform code and Node.js/V8), high CPU, event loop locking, latency, and more</li>
+                    <li>Used a varied array of tools to conduct performance analysis, including but not limited to metrics, distributed tracing, logs, V8 CPU and Heap profilers, BPF tools such as memleak and bpftrace, and more</li>
+                    <li>Proposed and helped implement improvements to our on call rotation</li>
+                    <li>Represented Netflix as a TC39 delegate on several meetings</li>
+                    <li>Currently I lead migrations and upgrades that require performance analysis before moving forward. When performance issues are identified, I discover the best way to mitigate those issues so migrations can move forward. Some examples include:
+                      <ul>
+                        <li>Migrated our logging system to utilize Sentry. The default Sentry integration incurred a performance impact of 12% to 50% increase in CPU, therefore I had to overhaul our entire logging system to allow integrating Sentry without the overhead, while also being careful to not make any breaking changes</li>
+                        <li>Migrated our distributed tracing stack to OpenTelemetry, improving performance of certain application up to 25%</li>
+                        <li>Coordinated several Node.js major upgrades• Participated on the on call rotation for the Node.js Platform running at the edge, which handles the majority of API traffic coming from netflix.com and other devices • Identified and fixed several performance issues on the aforementioned platform, including but not limited to memory leaks (on application code, platform code and Node.js/V8), high CPU, event loop locking, latency, and more • Used a varied array of tools to conduct performance analysis, including but not limited to metrics, distributed tracing, logs, V8 CPU and Heap profilers, BPF tools such as memleak and bpftrace, and more • Proposed and helped implement improvements to our on call rotation • Represented Netflix as a TC39 delegate on several meetings • Currently I lead migrations and upgrades that require performance analysis before moving forward. When performance issues are identified, I discover the best way to mitigate those issues so migrations can move forward. Some examples include: - Migrated our logging system to utilize Sentry. The default Sentry integration incurred a performance impact of 12% to 50% increase in CPU, therefore I had to overhaul our entire logging system to allow integrating Sentry without the overhead, while also being careful to not make any breaking changes - Migrated our distributed tracing stack to OpenTelemetry, improving performance of certain application up to 25% - Coordinated several Node.js major upgrades</li>
+                      </ul>
+                    </li>
+                  </ul>
+
+              </div>
+            </div>
+
+            <div class=terminal-card>
+              <header>Senior Performance Engineer @ Netflix, Node.js Platform Team</header>
+              <div>
+                <p>Mar 2019 - Apr 2020</p>
+                <ul>
+                  <li>Continued contributions to bpftrace, working to add new language features, optimize LLVM IR code generation, fix bugs, and improve usability</li>
+                  <li>Identified issues with Linux perf which caused infinite loops and memory leaks when perf was attached to certain JIT programs. Proposed patches to fix said issues to the LKML</li>
+                  <li>Continued maintaining llnode, ensuring that any changes that occurred on V8 were reflected on llnode</li>
+                  <li>Continued contributions to V8, fixing issues that arise with Linux perf as well as any necessary changes that needed to be done to support V8</li>
+                  <li>Extensive performance analysis of Node.js v12 to identify and fix slowness observed as part of the Node.js v10 -> Node.js v12 upgrade of the Node.js platform that serves edge requests</li>
+                  <li>Prototyped alternative postmortem debugging tools for Node.js</li>
+                  <li>Helped maintain our cloud performance analysis tool (based on Netflix/FlameScope)</li>
+                  <li>Added Node.js support to our cloud performance analysis tool, including: taking Linux perf and V8 Profiler flame graphs, V8 heap profiler flame graphs, and core dump capture• Continued contributions to bpftrace, working to add new language features, optimize LLVM IR code generation, fix bugs, and improve usability • Identified issues with Linux perf which caused infinite loops and memory leaks when perf was attached to certain JIT programs. Proposed patches to fix said issues to the LKML • Continued maintaining llnode, ensuring that any changes that occurred on V8 were reflected on llnode • Continued contributions to V8, fixing issues that arise with Linux perf as well as any necessary changes that needed to be done to support V8 • Extensive performance analysis of Node.js v12 to identify and fix slowness observed as part of the Node.js v10 -> Node.js v12 upgrade of the Node.js platform that serves edge requests • Prototyped alternative postmortem debugging tools for Node.js • Helped maintain our cloud performance analysis tool (based on Netflix/FlameScope) • Added Node.js support to our cloud performance analysis tool, including: taking Linux perf and V8 Profiler flame graphs, V8 heap profiler flame graphs, and core dump capture</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class=terminal-card>
+              <header>Open Source Engineer @ Fleye</header>
+              <div>
+                <p>Aug 2017 - Dec 2018</p>
+                <p>During my last year at Fleye, I was the engineer assigned to
+                our Netflix contract, where I contributed to Open Source
+                projects by fixing issues and implementing features as
+                requested, including:</p>
+                <ul>
+                  <li>Fixed longstanding issues between Node.js and Linux perf by making changes to V8 code generation pipeline. The changes ensured that Linux perf was able to profile Node.js code paths running on V8’s interpreter (Ignition) as well as JIT compiled code paths (TurboFan). Previously, only JIT compiled code paths were profilable</li>
+                  <li>Created libstapsdt, the first and only dynamic solution to register USDT probes on Linux. The library generates ELF shared libraries on the fly, those libraries contain the user-space trace probes. It then links those libraries to the running application to make the probes available to tracers</li>
+                  <li>Worked to improve llnode and keep it up to date with Node.js releases. This work requires understanding of V8 internals</li>
+                  <li>Was part of the team maintaining bpftrace early on, where I contributed with new language features, optimizations, bug fixes, etc. Our goal was to make bpftrace a robust, complete, production-ready tracer. We achieved that goal and I presented bpftrace at Linux Plumbers Conference 2018</li>
+                  <li>Participated in the Node.js Diagnostics Working Group, with a focus on production diagnostic tools</li>
+                  <li>Gave talks at conferences about tools related to or created by me while on this role</li>
+                  <li>Participated at in-person summits where decisions were made about open source projects, including Node.js Diagnostics Summits, Node.js/OpenJS Collaborators Summit, and Linux Plumbers Conference (BPF track)During my last year at Fleye, I was the engineer assigned to our Netflix contract, where I contributed to Open Source projects by fixing issues and implementing features as requested, including: • Fixed longstanding issues between Node.js and Linux perf by making changes to V8 code generation pipeline. The changes ensured that Linux perf was able to profile Node.js code paths running on V8’s interpreter (Ignition) as well as JIT compiled code paths (TurboFan). Previously, only JIT compiled code paths were profilable • Created libstapsdt, the first and only dynamic solution to register USDT probes on Linux. The library generates ELF shared libraries on the fly, those libraries contain the user-space trace probes. It then links those libraries to the running application to make the probes available to tracers • Worked to improve llnode and keep it up to date with Node.js releases. This work requires understanding of V8 internals • Was part of the team maintaining bpftrace early on, where I contributed with new language features, optimizations, bug fixes, etc. Our goal was to make bpftrace a robust, complete, production-ready tracer. We achieved that goal and I presented bpftrace at Linux Plumbers Conference 2018 • Participated in the Node.js Diagnostics Working Group, with a focus on production diagnostic tools • Gave talks at conferences about tools related to or created by me while on this role • Participated at in-person summits where decisions were made about open source projects, including Node.js Diagnostics Summits, Node.js/OpenJS Collaborators Summit, and Linux Plumbers Conference (BPF track)</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class=terminal-card>
+              <header>Lead Software Engineer @ Fleye</header>
+              <div>
+                <p>Jan 2014 - Aug 2017</p>
+                <ul>
+                  <li>Automated our provisioning and deployment processes</li>
+                  <li>Created dashboards and alerts to monitor the health of our systems</li>
+                  <li>Troubleshooted and fixed edge-case issues in production which were leading to huge performance degradation and system crashes</li>
+                  <li>Migrated our entire cloud infrastructure from Rackspace to DigitalOcean, reducing our cloud expenses by 80%</li>
+                  <li>Participated on the oncall rotations and made proposals to improve it</li>
+                  <li>Lead our development team, mentoring new developers and guiding the team to deliver value to our clients• Automated our provisioning and deployment processes • Created dashboards and alerts to monitor the health of our systems • Troubleshooted and fixed edge-case issues in production which were leading to huge performance degradation and system crashes • Migrated our entire cloud infrastructure from Rackspace to DigitalOcean, reducing our cloud expenses by 80% • Participated on the oncall rotations and made proposals to improve it • Lead our development team, mentoring new developers and guiding the team to deliver value to our clients</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class=terminal-card>
+              <header>Software Engineer Internship @ Fleye</header>
+              <div>
+                <p>Jan 2012 - Dec 2013</p>
+                <ul>
+                  <li>Worked on several web applications for telecommunication companies</li>
+                  <li>Created a database schema migration system for a legacy application, making deployment of new versions easier, reproducible and more reliable</li>
+                  <li>Co-authored the internal web framework used to develop our systems. The framework allowed for fast development and reusability across projects.</li>
+                  <li>Troubleshooted and fixed several issues in production, both related to the application and to the infrastructure</li>
+                  <li>Lead the efforts to move all our projects from SVN to Git, which considerably improved our development workflow</li>
+                  <li>Lead the efforts to upgrade from Python 2.5 to Python 2.7• Worked on several web applications for telecommunication companies • Created a database schema migration system for a legacy application, making deployment of new versions easier, reproducible and more reliable • Co-authored the internal web framework used to develop our systems. The framework allowed for fast development and reusability across projects. • Troubleshooted and fixed several issues in production, both related to the application and to the infrastructure • Lead the efforts to move all our projects from SVN to Git, which considerably improved our development workflow • Lead the efforts to upgrade from Python 2.5 to Python 2.7</li>
+                </ul>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>
+
