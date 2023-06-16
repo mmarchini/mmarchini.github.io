@@ -6,19 +6,23 @@ tmpl.innerHTML = `
     </div>
   </div>
 
-  <div class=grid-container style="border-bottom: 1px dashed var(--primary-color); padding-bottom: 25px; margin-bottom: 15px;">
+  <div class=grid-container style="">
     <div class="grid-100" style="text-align: center;">
-      <nav class="terminal-prompt">
-        <a href="/about.html">about</a>
-        <a href="/open-source.html">open source</a>
-        <a href="/conference-talks.html">conference talks</a>
-        <a href="/career.html">career</a>
-        <a href="https://dev.to/mmarchini">blog</a>
-        <a href="https://github.com/mmarchini">github</a>
-        <a href="https://www.linkedin.com/in/mary-marchini/">linkedin</a>
-      </nav>
+      <span class="terminal-prompt">
+        <nav>
+          <a href="/about.html">about</a>
+          <a href="/open-source.html">open source</a>
+          <a href="/conference-talks.html">conference talks</a>
+          <a href="/career.html">career</a>
+          <a href="https://dev.to/mmarchini">blog</a>
+          <a href="https://github.com/mmarchini">github</a>
+          <a href="https://www.linkedin.com/in/mary-marchini/">linkedin</a>
+        </nav>
+      </span>
     </div>
   </div>
+
+  <hr style="border-color: var(--primary-color);">
 `;
 
 class MaryHeader extends HTMLElement {

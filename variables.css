@@ -4,3 +4,21 @@ body {
   --primary-color: #00ff00;
   --invert-font-color: #040404;
 }
+
+.terminal-prompt nav {
+  display: inline;
+  white-space: normal;
+  text-align: left;
+}
+
+.terminal-prompt nav a {
+  margin: 8px;
+}
+
+/* .terminal-prompt nav :first-child { */
+/*   margin: 0px; */
+/* } */
+
+.terminal-prompt nav :before {
+  vertical-align: top;
+}
