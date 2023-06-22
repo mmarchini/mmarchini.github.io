@@ -17,6 +17,7 @@ tmpl.innerHTML = `
           <a href="https://dev.to/mmarchini">blog</a>
           <a href="https://github.com/mmarchini">github</a>
           <a href="https://www.linkedin.com/in/mary-marchini/">linkedin</a>
+          <a rel="me" href="https://terra.incognita.net/@mary">mastodon</a>
         </nav>
       </span>
     </div>
