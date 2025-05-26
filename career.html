@@ -34,7 +34,7 @@
                     existing applications continue working without issues,
                     and without requiring manual upgrades or changes from
                     said applications, as well as ensuring that the new
-                    abstraction layers being introduces do not incur any
+                    abstraction layers being introduced do not incur any
                     performance penalties.
                   </li>
                   <li>
@@ -110,7 +110,8 @@
                           application up to 25%
                         </li>
                         <li>
-                          Coordinated several Node.js major upgrades
+                          Coordinated several Node.js major upgrades across the
+                          company
                         </li>
                       </ul>
                     </li>
@@ -124,14 +125,42 @@
               <div>
                 <p>Mar 2019 - Apr 2020</p>
                 <ul>
-                  <li>Continued contributions to bpftrace, working to add new language features, optimize LLVM IR code generation, fix bugs, and improve usability</li>
-                  <li>Identified issues with Linux perf which caused infinite loops and memory leaks when perf was attached to certain JIT programs. Proposed patches to fix said issues to the LKML</li>
-                  <li>Continued maintaining llnode, ensuring that any changes that occurred on V8 were reflected on llnode</li>
-                  <li>Continued contributions to V8, fixing issues that arise with Linux perf as well as any necessary changes that needed to be done to support V8</li>
-                  <li>Extensive performance analysis of Node.js v12 to identify and fix slowness observed as part of the Node.js v10 -> Node.js v12 upgrade of the Node.js platform that serves edge requests</li>
-                  <li>Prototyped alternative postmortem debugging tools for Node.js</li>
-                  <li>Helped maintain our cloud performance analysis tool (based on Netflix/FlameScope)</li>
-                  <li>Added Node.js support to our cloud performance analysis tool, including: taking Linux perf and V8 Profiler flame graphs, V8 heap profiler flame graphs, and core dump capture• Continued contributions to bpftrace, working to add new language features, optimize LLVM IR code generation, fix bugs, and improve usability • Identified issues with Linux perf which caused infinite loops and memory leaks when perf was attached to certain JIT programs. Proposed patches to fix said issues to the LKML • Continued maintaining llnode, ensuring that any changes that occurred on V8 were reflected on llnode • Continued contributions to V8, fixing issues that arise with Linux perf as well as any necessary changes that needed to be done to support V8 • Extensive performance analysis of Node.js v12 to identify and fix slowness observed as part of the Node.js v10 -> Node.js v12 upgrade of the Node.js platform that serves edge requests • Prototyped alternative postmortem debugging tools for Node.js • Helped maintain our cloud performance analysis tool (based on Netflix/FlameScope) • Added Node.js support to our cloud performance analysis tool, including: taking Linux perf and V8 Profiler flame graphs, V8 heap profiler flame graphs, and core dump capture</li>
+                  <li>
+                    Continued contributions to bpftrace, working to add new
+                    language features, optimize LLVM IR code generation, fix
+                    bugs, and improve usability
+                  </li>
+                  <li>
+                    Identified issues with Linux perf which caused infinite loops and memory leaks when perf was attached to certain JIT programs. Proposed patches to fix said issues to the LKML</li>
+                  <li>
+                    Continued maintaining llnode, ensuring that any changes
+                    that occurred on V8 were reflected on llnode
+                  </li>
+                  <li>
+                    Continued contributions to V8, fixing issues that arise
+                    with Linux perf as well as any necessary changes that
+                    needed to be done to support V8
+                  </li>
+                  <li>
+                    Extensive performance analysis of Node.js v12 to identify
+                    and fix slowness observed as part of the Node.js v10 ->
+                    Node.js v12 upgrade of the Node.js platform that serves
+                    edge requests
+                  </li>
+                  <li>
+                    Prototyped alternative postmortem debugging tools for
+                    Node.js
+                  </li>
+                  <li>
+                    Helped maintain our cloud performance analysis tool (based
+                    on Netflix/FlameScope)
+                  </li>
+                  <li>
+                    Added Node.js support to our cloud performance analysis
+                    tool, including: taking Linux perf and V8 Profiler flame
+                    graphs, V8 heap profiler flame graphs, and core dump
+                    capture
+                  </li>
                 </ul>
               </div>
             </div>
@@ -145,13 +174,48 @@
                 projects by fixing issues and implementing features as
                 requested, including:</p>
                 <ul>
-                  <li>Fixed longstanding issues between Node.js and Linux perf by making changes to V8 code generation pipeline. The changes ensured that Linux perf was able to profile Node.js code paths running on V8’s interpreter (Ignition) as well as JIT compiled code paths (TurboFan). Previously, only JIT compiled code paths were profilable</li>
-                  <li>Created libstapsdt, the first and only dynamic solution to register USDT probes on Linux. The library generates ELF shared libraries on the fly, those libraries contain the user-space trace probes. It then links those libraries to the running application to make the probes available to tracers</li>
-                  <li>Worked to improve llnode and keep it up to date with Node.js releases. This work requires understanding of V8 internals</li>
-                  <li>Was part of the team maintaining bpftrace early on, where I contributed with new language features, optimizations, bug fixes, etc. Our goal was to make bpftrace a robust, complete, production-ready tracer. We achieved that goal and I presented bpftrace at Linux Plumbers Conference 2018</li>
-                  <li>Participated in the Node.js Diagnostics Working Group, with a focus on production diagnostic tools</li>
-                  <li>Gave talks at conferences about tools related to or created by me while on this role</li>
-                  <li>Participated at in-person summits where decisions were made about open source projects, including Node.js Diagnostics Summits, Node.js/OpenJS Collaborators Summit, and Linux Plumbers Conference (BPF track)During my last year at Fleye, I was the engineer assigned to our Netflix contract, where I contributed to Open Source projects by fixing issues and implementing features as requested, including: • Fixed longstanding issues between Node.js and Linux perf by making changes to V8 code generation pipeline. The changes ensured that Linux perf was able to profile Node.js code paths running on V8’s interpreter (Ignition) as well as JIT compiled code paths (TurboFan). Previously, only JIT compiled code paths were profilable • Created libstapsdt, the first and only dynamic solution to register USDT probes on Linux. The library generates ELF shared libraries on the fly, those libraries contain the user-space trace probes. It then links those libraries to the running application to make the probes available to tracers • Worked to improve llnode and keep it up to date with Node.js releases. This work requires understanding of V8 internals • Was part of the team maintaining bpftrace early on, where I contributed with new language features, optimizations, bug fixes, etc. Our goal was to make bpftrace a robust, complete, production-ready tracer. We achieved that goal and I presented bpftrace at Linux Plumbers Conference 2018 • Participated in the Node.js Diagnostics Working Group, with a focus on production diagnostic tools • Gave talks at conferences about tools related to or created by me while on this role • Participated at in-person summits where decisions were made about open source projects, including Node.js Diagnostics Summits, Node.js/OpenJS Collaborators Summit, and Linux Plumbers Conference (BPF track)</li>
+                  <li>
+                    Fixed longstanding issues between Node.js and Linux perf by
+                    making changes to V8 code generation pipeline. The changes
+                    ensured that Linux perf was able to profile Node.js code
+                    paths running on V8’s interpreter (Ignition) as well as JIT
+                    compiled code paths (TurboFan). Previously, only JIT
+                    compiled code paths were profilable
+                  </li>
+                  <li>
+                    Created libstapsdt, the first and only dynamic solution to
+                    register USDT probes on Linux. The library generates ELF
+                    shared libraries on the fly, those libraries contain the
+                    user-space trace probes. It then links those libraries to
+                    the running application to make the probes available to
+                    tracers
+                  </li>
+                  <li>
+                    Worked to improve llnode and keep it up to date with
+                    Node.js releases. This work requires understanding of V8
+                    internals
+                  </li>
+                  <li>
+                    Was part of the team maintaining bpftrace early on, where I
+                    contributed with new language features, optimizations, bug
+                    fixes, etc. Our goal was to make bpftrace a robust,
+                    complete, production-ready tracer. We achieved that goal
+                    and I presented bpftrace at Linux Plumbers Conference 2018
+                  </li>
+                  <li>
+                    Participated in the Node.js Diagnostics Working Group, with
+                    a focus on production diagnostic tools
+                  </li>
+                  <li>
+                    Gave talks at conferences about tools related to or created
+                    by me while on this role
+                  </li>
+                  <li>
+                    Spoke at in-person summits where decisions were made about
+                    open source projects, including Node.js Diagnostics
+                    Summits, Node.js/OpenJS Collaborators Summit, and Linux
+                    Plumbers Conference 2018 (BPF track)
+                  </li>
                 </ul>
               </div>
             </div>
@@ -161,12 +225,30 @@
               <div>
                 <p>Jan 2014 - Aug 2017</p>
                 <ul>
-                  <li>Automated our provisioning and deployment processes</li>
-                  <li>Created dashboards and alerts to monitor the health of our systems</li>
-                  <li>Troubleshooted and fixed edge-case issues in production which were leading to huge performance degradation and system crashes</li>
-                  <li>Migrated our entire cloud infrastructure from Rackspace to DigitalOcean, reducing our cloud expenses by 80%</li>
-                  <li>Participated on the oncall rotations and made proposals to improve it</li>
-                  <li>Lead our development team, mentoring new developers and guiding the team to deliver value to our clients• Automated our provisioning and deployment processes • Created dashboards and alerts to monitor the health of our systems • Troubleshooted and fixed edge-case issues in production which were leading to huge performance degradation and system crashes • Migrated our entire cloud infrastructure from Rackspace to DigitalOcean, reducing our cloud expenses by 80% • Participated on the oncall rotations and made proposals to improve it • Lead our development team, mentoring new developers and guiding the team to deliver value to our clients</li>
+                  <li>
+                    Automated our provisioning and deployment processes
+                  </li>
+                  <li>
+                    Created dashboards and alerts to monitor the health of our
+                    systems
+                  </li>
+                  <li>
+                    Troubleshooted and fixed edge-case issues in production
+                    which were leading to huge performance degradation and
+                    system crashes
+                  </li>
+                  <li>
+                    Migrated our entire cloud infrastructure from Rackspace to
+                    DigitalOcean, reducing our cloud expenses by 80%
+                  </li>
+                  <li>
+                    Participated on the oncall rotations and made proposals to
+                    improve it
+                  </li>
+                  <li>
+                    Lead our development team, mentoring new developers and
+                    guiding the team to deliver value to our clients
+                  </li>
                 </ul>
               </div>
             </div>
@@ -176,12 +258,31 @@
               <div>
                 <p>Jan 2012 - Dec 2013</p>
                 <ul>
-                  <li>Worked on several web applications for telecommunication companies</li>
-                  <li>Created a database schema migration system for a legacy application, making deployment of new versions easier, reproducible and more reliable</li>
-                  <li>Co-authored the internal web framework used to develop our systems. The framework allowed for fast development and reusability across projects.</li>
-                  <li>Troubleshooted and fixed several issues in production, both related to the application and to the infrastructure</li>
-                  <li>Lead the efforts to move all our projects from SVN to Git, which considerably improved our development workflow</li>
-                  <li>Lead the efforts to upgrade from Python 2.5 to Python 2.7• Worked on several web applications for telecommunication companies • Created a database schema migration system for a legacy application, making deployment of new versions easier, reproducible and more reliable • Co-authored the internal web framework used to develop our systems. The framework allowed for fast development and reusability across projects. • Troubleshooted and fixed several issues in production, both related to the application and to the infrastructure • Lead the efforts to move all our projects from SVN to Git, which considerably improved our development workflow • Lead the efforts to upgrade from Python 2.5 to Python 2.7</li>
+                  <li>
+                    Worked on several web applications for telecommunication
+                    companies
+                  </li>
+                  <li>
+                    Created a database schema migration system for a legacy
+                    application, making deployment of new versions easier,
+                    reproducible and more reliable
+                  </li>
+                  <li>
+                    Co-authored the internal web framework used to develop our
+                    systems. The framework allowed for fast development and
+                    reusability across projects.
+                  </li>
+                  <li>
+                    Troubleshooted and fixed several issues in production, both
+                    related to the application and to the infrastructure
+                  </li>
+                  <li>
+                    Lead the efforts to move all our projects from SVN to Git,
+                    which considerably improved our development workflow
+                  </li>
+                  <li>
+                    Lead the efforts to upgrade from Python 2.5 to Python 2.7
+                  </li>
                 </ul>
               </div>
             </div>
